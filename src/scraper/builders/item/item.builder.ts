@@ -10,7 +10,7 @@ export class Item extends Generic {
     static get(type: Scrapers.Types, ctg_id: Scrapers.Ctgs): typeof Generic {
         return ({
             [Scrapers.Ctgs.CONSUMABLE]: Builders.Consumable,
-            [Scrapers.Ctgs.EQUIPMENT]:  Builders.Equipment,
+            //[Scrapers.Ctgs.EQUIPMENT]:  Builders.Equipment,
         } as any)[ctg_id]?.get(type, ctg_id) || Item;
     }
 
