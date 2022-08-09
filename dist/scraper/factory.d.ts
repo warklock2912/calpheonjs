@@ -1,0 +1,11 @@
+import * as Scrapers from "./typings";
+export declare const Scrape: Scrapers.Scrape;
+export declare const Item: (id: string, options?: Scrapers.Options | undefined) => Promise<Scrapers.Result<Scrapers.Entities.Item>>;
+export declare const Consumable: (id: string, options?: Scrapers.Options | undefined) => Promise<Scrapers.Result<Scrapers.Entities.Consumable>>;
+export declare const Equipment: (id: string, options?: Scrapers.Options | undefined) => Promise<Scrapers.Result<Scrapers.Entities.Equipment>>;
+export declare const Knowledge: (id: string, options?: Scrapers.Options | undefined) => Promise<Scrapers.Result<Scrapers.Entities.Knowledge>>;
+export declare const MaterialGroup: (id: string, options?: Scrapers.Options | undefined) => Promise<Scrapers.Result<Scrapers.Entities.MaterialGroup>>;
+export declare const NPC: (id: string, options?: Scrapers.Options | undefined) => Promise<Scrapers.Result<Scrapers.Entities.NPC>>;
+export declare const Worker: (id: string, options?: Scrapers.Options | undefined) => Promise<Scrapers.Result<Scrapers.Entities.Worker>>;
+export declare const Quest: (id: string, options?: Scrapers.Options | undefined) => Promise<Scrapers.Result<Scrapers.Entities.Quest>>;
+export declare const Recipe: (id: string, options?: Scrapers.Options | undefined) => Promise<Scrapers.Result<Scrapers.Entities.Recipe>>;
